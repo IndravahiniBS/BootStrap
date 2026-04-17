@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-4">
+        <div class="row">
+                <!-- To implement Grid "container"[given in 1st div] is mandatory and "row" is also mandatory. The "col" class is used to define columns within the row. In this example, we have three spans with the class "bg-warning -->
+            <span class="bg-warning col">Grid System</span>
+            <span class="bg-warning col">Grid System</span>
+            <span class="bg-warning col">Grid System</span>
+
+            <!-- col is a Bootstrap class that defines a column within a row in the grid system. The grid system in Bootstrap is based on a 12-column layout, and the col class allows you to specify how many columns an element should span. In this example, each span with the class "col" will automatically take up an equal portion of the available space within the row, resulting in three equal-width columns. You can also use additional classes like col-6 to specify that an element should span 6 out of the 12 columns, allowing for more control over the layout and responsiveness of your design. -->
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <span class="bg-danger col m-1">Grid System</span>
+            <span class="bg-danger col m-1">Grid System</span>
+            <span class="bg-danger col m-1">Grid System</span> 
+            <!-- We are adding margin here -->
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <span class="bg-info col-4">Grid System</span>
+            <span class="bg-info col-4">Grid System</span>
+            <span class="bg-info col">Grid System</span>
+            <!-- We are specifying column length here. The first two spans with the class "col-4" will each take up 4 out of the 12 columns in the grid, while the third span with the class "col" will automatically take up the remaining space, which is 4 columns in this case. This allows for a more customized layout where you can control the width of specific columns while still maintaining a responsive design. -->
+        </div>
+    </div>
+
+        <div class="container my-4">
+        <div class="row justify-content-end">
+            <span class="bg-secondary col-3 m-1">Grid System</span>
+            <span class="bg-secondary col-3 m-1">Grid System</span>
+            <span class="bg-secondary col-3 m-1">Grid System</span> 
+            <!-- justify-content-end,start,center are Bootstrap classes that control the alignment of columns within a row. justify-content-end will align the columns to the right end of the row, justify-content-start will align them to the left start of the row, and justify-content-center will center the columns within the row. In this example, using justify-content-end will push all three spans to the right side of the container, creating a right-aligned layout for the grid system. You can choose different justification classes based on how you want to align your content within the row. -->
+
+            <!-- if col-3 is not given it consumes all 12 spaces and justify-content-end will not work as expected. So, it is important to specify the column width when using justification classes to ensure that the columns are aligned correctly within the row. -->
+        </div>
+    </div>
+
+      <div class="container my-4">
+        <div class="row justify-content-between">
+            <span class="bg-dark text-light col m-1">Grid System</span>
+            <span class="bg-dark text-light col m-1">Grid System</span>
+            <span class="bg-dark text-light col m-1">Grid System</span> 
+        </div>
+    </div>
+
+      <div class="container my-4">
+        <div class="row">
+            <span class="bg-primary col-md-4 col-lg-3">Grid System</span>
+            <span class="bg-primary col-md-4 col-lg-3">Grid System</span>
+            <span class="bg-primary col-md-4 col-lg-3">Grid System</span> 
+            <!-- It adjusts the column width based on the screen size. On medium screens (col-md-4), each span will take up 4 out of the 12 columns, resulting in three equal-width columns. On larger screens (col-lg-3), each span will take up 3 out of the 12 columns, allowing for more columns to fit within the row. This responsive design ensures that the layout adapts to different screen sizes, providing an optimal viewing experience across various devices. -->
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
